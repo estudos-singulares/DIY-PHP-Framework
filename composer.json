@@ -1,27 +1,27 @@
 {
-    "name": "diy/mvc.framework",
-    "description": "Estudo em PHP sobre a criação de um MicroFramework MVC DIY",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alessandro Ferreira Pereira",
-            "email": "datacrash.job@gmail.com",
-            "role": "developer"
-        }
-    ],
-    "require": {
-        "php": "^7.0"
-    },
-    "require-dev": {},
-    "autoload": {
-        "psr-0": {
-            "DIY": "Vendor",
-            "App": "/"
-        }
-    },
-    "minimum-stability": "stable",
-    "config": {
-        "bin-dir": "bin"
+  "name": "diy/mvc.framework",
+  "description": "Estudo em PHP sobre a criação de um MicroFramework MVC DIY",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alessandro Ferreira Pereira",
+      "email": "datacrash.job@gmail.com",
+      "role": "developer"
     }
+  ],
+  "require": {
+    "php": "^7.0"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-0": {
+      "DIY": "Vendor",
+      "App": ""
+    }
+  },
+  "minimum-stability": "stable",
+  "config": {
+    "bin-dir": "bin"
+  }
 }
