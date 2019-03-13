@@ -2,18 +2,8 @@
 
 namespace App\Models;
 
-class Artigo
+use DIY\DB\Table;
+class Artigo extends Table
 {
-    protected $db;
-
-    public function __construct(\PDO $db)
-    {
-        $this->db = $db;
-    }
-
-    public function fetchAll()
-    {
-        $query = "Select * from artigos";
-        return $this->db->query($query);
-    }
+    protected $table = "artigos";
 }
