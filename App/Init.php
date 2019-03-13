@@ -12,4 +12,10 @@ class Init extends Bootstrap
         $ar['empresa'] = array('route' => '/empresa', 'controller' => 'index', 'action' => 'empresa');
         $this->setRoutes($ar);
     }
+
+    public static function getDB()
+    {
+        $db = new \PDO("mysql:host=localhost;dbname=mvc", "root", "root");
+        return $db;
+    }
 }
