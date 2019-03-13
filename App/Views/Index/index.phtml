@@ -1,7 +1,10 @@
 <h1>Index</h1>
 
-<ul>
-<?php foreach ($this->view->nomes as $nome): ?>
-    <li><?php echo $nome; ?></li>
+<div style="display: flex; text-align: center; width: auto; margin: 0; padding: 0;">
+<?php foreach ($this->view->artigos as $artigo): ?>
+    <div style="width: 200px; border-color: darkblue; border-style: solid; border-radius: 15px; margin: 2px; padding: 2px;">
+        <h2><?php echo $artigo['titulo']; ?></h2>
+        <a><?php echo $artigo['conteudo']; ?></a>
+    </div>
 <?php endforeach;?>
-</ul>
+</div>
