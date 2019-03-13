@@ -15,7 +15,11 @@ class Init extends Bootstrap
 
     public static function getDB()
     {
-        $db = new \PDO("mysql:host=localhost;dbname=mvc", "root", "root");
+        $dbUser = "root";
+        $dbPassword = "";
+        $StrConnection = "mysql:host=localhost;dbname=mvc";
+
+        $db = new \PDO($StrConnection, $dbUser, $dbPassword);
         return $db;
     }
 }
